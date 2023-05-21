@@ -15,10 +15,10 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddMudServices();
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.Environment.WebRootPath) });
-builder.Services.AddDbContext<MyDbContext>(x => x.UseSqlite("Data Source=LocalDatabase.db"));
-
 
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -37,9 +37,10 @@ app.UseRouting();
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 
-using (var scope =
-  app.ApplicationServices.CreateScope())
-using (var context = scope.ServiceProvider.GetService<MyDbContext>())
-    context.Database.Migrate();
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<MyDbContext>();
+    // use context
+    dbContext.Database.Migrate();}
 
 app.Run();
