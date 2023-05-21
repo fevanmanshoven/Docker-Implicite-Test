@@ -21,7 +21,12 @@ namespace ImpliciteTesterServer.Infrastructure
         public DbSet<FaceReader> FaceReaders { get; set; }
 
 
+        public MyDbContext(DbContextOptions<MyDbContext> options)
+    : base(options)
+        { }
 
+        public MyDbContext()
+        { }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

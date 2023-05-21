@@ -15,7 +15,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddMudServices();
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.Environment.WebRootPath) });
-
+builder.Services.AddDbContext<MyDbContext>(x => x.UseSqlite("Data Source=ImpliciteTester.db"));
 var app = builder.Build();
 
 
