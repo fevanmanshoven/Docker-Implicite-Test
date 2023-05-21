@@ -1,0 +1,70 @@
+﻿@page "/categories"
+<PageTitle>Categories</PageTitle>
+<MudText Typo="Typo.h3" GutterBottom="true">Categories</MudText>
+@if (loading)
+    {
+    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+    }
+    else
+    {
+<MudCard Class="mt-10">
+    <MudForm Model="@newCategory" @ref="@form" @bind-IsValid="@success" @bind-Errors="@errors">
+        <MudTextField @bind-Value="newCategory.Name"
+                      For="@(() => newCategory.Name)"
+                      Immediate="true"
+                      Label="Name"
+                      Required="true" RequiredError="Name is required!" />
+    </MudForm>
+</MudCard>
+
+<MudCard>
+    <MudCardActions>
+        <MudFab HtmlTag="label"
+                Color="@Color.Success"
+                Icon="@Icons.Filled.AddCircle"
+                Size="@Size.Small"
+                OnClick="Submit" />
+        <span style="padding-left: 15px;">Add category</span>
+    </MudCardActions>
+    @if (errors.Length > 0)
+        {
+        <MudCardActions Class="pa-4 mud-height-full">
+            <div class="d-block">
+                <MudText Typo="Typo.subtitle2">@($"Errors ({errors.Length})")</MudText>
+                @foreach (var error in errors)
+                    {
+                    <MudText Color="@Color.Error">@error</MudText>
+                    }
+            </div>
+        </MudCardActions>
+        }
+</MudCard>
+
+
+<MudTable Items="@this.categories" Class="mt-5">
+
+    <HeaderContent>
+        <MudTh>Id</MudTh>
+        <MudTh>Name</MudTh>
+        <MudTh></MudTh>
+
+    </HeaderContent>
+
+    <RowTemplate>
+        <MudTd DataLabel="Id">
+            @context.CategoryId
+        </MudTd>
+        <MudTd DataLabel="Name">
+            @context.Name
+        </MudTd>
+        <MudTd DataLabel="Delete">
+            <MudFab HtmlTag="Delete"
+                    Color="@Color.Success"
+                    Icon="@Icons.Filled.Delete"
+                    Size="@Size.Small"
+                    OnClick="() => Remove(context)" />
+        </MudTd>
+    </RowTemplate>
+
+</MudTable>
+    }

@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+	  <TargetFramework>net6.0</TargetFramework>
+	  <Nullable>enable</Nullable>
+	  <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="MudBlazor" Version="6.2.5" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.5" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Data\" />
+    <Folder Include="wwwroot\Data\Images\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Infrastructure\EntityTypeConfigurations\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Pages\ImageUploads\" />
+    <Folder Include="Pages\Categories\" />
+    <Folder Include="Pages\Tests\" />
+    <Folder Include="Pages\Results\" />
+    <Folder Include="wwwroot\Data\FaceReader\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\Data\" />
+    <Content Remove="wwwroot\Data\Images\" />
+    <Content Remove="wwwroot\Data\FaceReader\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Infrastructure\" />
+    <None Remove="Infrastructure\EntityTypeConfigurations\" />
+    <None Remove="Migrations\" />
+    <None Remove="Pages\ImageUploads\" />
+    <None Remove="Pages\Categories\" />
+    <None Remove="Pages\Tests\" />
+    <None Remove="Pages\Results\" />
+  </ItemGroup>
+</Project>

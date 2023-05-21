@@ -1,0 +1,203 @@
+﻿@page "/add-tests"
+@using ImpliciteTesterServer.Data;
+
+<PageTitle>Tests</PageTitle>
+<MudText Typo="Typo.h3" GutterBottom="true">Tests</MudText>
+@if (loading)
+{
+    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+}
+else
+{
+    <MudForm Model="@newTest" @ref="@form" @bind-IsValid="@success" @bind-Errors="@errors">
+        <MudGrid>
+            <MudItem xs="12">
+                <MudCard Class="d-flex align-center justify-center mud-width-full">
+                    <MudTextField @bind-Value="newTest.Name"
+                                  For="@(() => newTest.Name)"
+                                  Immediate="true"
+                                  Label="Name"
+                                  Required="true" RequiredError="Name is required!" />
+                </MudCard>
+            </MudItem>
+            <MudItem xs="6">
+                <MudCard Class="d-flex align-center justify-center mud-width-full">
+                    <MudSelect T="Category"
+                               @bind-SelectedValues="selectedPosCategories"
+                               Immediate="true"
+                               Label="Positive Category"
+                               AnchorOrigin="Origin.BottomCenter"
+                               MultiSelection="true">
+                        @foreach (Category category in categories)
+                        {
+                            <MudSelectItem T="Category" Value="@(category)" />
+                        }
+                    </MudSelect>
+                    <MudSelect T="ImageUpload"
+                               @bind-SelectedValues="selectedPosImageUploads"
+                               Immediate="true"
+                               Label="Positive ImageUpload"
+                               AnchorOrigin="Origin.BottomCenter"
+                               MultiSelection="true">
+                        @foreach (ImageUpload imageUpload in imageUploads)
+                        {
+                            <MudSelectItem T="ImageUpload" Value="@(imageUpload)" />
+                        }
+                    </MudSelect>
+                </MudCard>
+            </MudItem>
+            <MudItem xs="6">
+                <MudCard Class="d-flex align-center justify-center mud-width-full">
+                    <MudSelect T="Category"
+                               @bind-SelectedValues="selectedNegCategories"
+                               Immediate="true"
+                               Label="Negative Category"
+                               AnchorOrigin="Origin.BottomCenter"
+                               MultiSelection="true">
+                        @foreach (Category category in categories)
+                        {
+                            <MudSelectItem T="Category" Value="@(category)" />
+                        }
+                    </MudSelect>
+                    <MudSelect T="ImageUpload"
+                               @bind-SelectedValues="selectedNegImageUploads"
+                               Immediate="true"
+                               Label="Negative ImageUpload"
+                               AnchorOrigin="Origin.BottomCenter"
+                               MultiSelection="true">
+                        @foreach (ImageUpload imageUpload in imageUploads)
+                        {
+                            <MudSelectItem T="ImageUpload" Value="@(imageUpload)" />
+                        }
+                    </MudSelect>
+                </MudCard>
+            </MudItem>
+        </MudGrid>
+    </MudForm>
+
+    <MudCard Class="mt-10">
+        <MudCardActions>
+            <MudFab HtmlTag="label"
+                    Color="@Color.Success"
+                    Icon="@Icons.Filled.AddCircle"
+                    Size="@Size.Small"
+                    OnClick="SubmitAsync" />
+            <span style="padding-left: 15px;">Add Test</span>
+        </MudCardActions>
+        @if (errors.Length > 0)
+        {
+            <MudCardActions Class="pa-4 mud-height-full">
+                <div class="d-block">
+                    <MudText Typo="Typo.subtitle2">@($"Errors ({errors.Length})")</MudText>
+                    @foreach (var error in errors)
+                    {
+                        <MudText Color="@Color.Error">@error</MudText>
+                    }
+                </div>
+            </MudCardActions>
+        }
+    </MudCard>
+
+    if (loadingUpload)
+    {
+        <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+    }
+    else
+    {
+        <MudTable Items="@this.tests" Class="mt-5">
+
+            <HeaderContent>
+                <MudTh>Id</MudTh>
+                <MudTh>Name</MudTh>
+                <MudTh>Postive Category</MudTh>
+                <MudTh>Postive ImageUpload</MudTh>
+                <MudTh>Negative Category</MudTh>
+                <MudTh>Negative ImageUpload</MudTh>
+                <MudTh></MudTh>
+                <MudTh></MudTh>
+                <MudTh></MudTh>
+                <MudTh></MudTh>
+
+
+            </HeaderContent>
+
+            <RowTemplate>
+                <MudTd DataLabel="Id">
+                    @context.TestId
+                </MudTd>
+                <MudTd DataLabel="Name">
+                    @context.Name
+                </MudTd>
+                <MudTd DataLabel="Category">
+                    @if (@context.PosCategories != null)
+                    {
+                        @string.Join(", ", @context.PosCategories)
+                    }
+                </MudTd>
+                <MudTd DataLabel="Images">
+                    @if (@context.PosImageUploads != null)
+                    {
+                        @string.Join(", ", @context.PosImageUploads)
+                    }
+                </MudTd>
+                <MudTd DataLabel="Category">
+                    @if (@context.NegCategories != null)
+                    {
+                        @string.Join(", ", @context.NegCategories)
+                    }
+                </MudTd>
+                <MudTd DataLabel="Images">
+                    @if (@context.NegImageUploads != null)
+                    {
+                        @string.Join(",", @context.NegImageUploads)
+                    }
+                </MudTd>
+                @{
+                    bool playDisabled = false;
+                    if (!context.Fases.Any())
+                    {
+                        playDisabled = true;
+                    }
+                }
+                <MudTd DataLabel="detail">
+                    <MudFab HtmlTag="detail"
+                            Color="@Color.Success"
+                            Icon="@Icons.Outlined.PlayCircle"
+                            Size="@Size.Small"
+                            Disabled="playDisabled"
+                            @onclick="() => NavigateToRunTests(context.TestId)" />
+                </MudTd>
+                <MudTd DataLabel="detail">
+                    <MudFab HtmlTag="detail"
+                            Color="@Color.Success"
+                            Icon="@Icons.Material.Filled.ChecklistRtl"
+                            Size="@Size.Small"
+                            @onclick="() => NavigateToResultTests(context.TestId)" />
+                </MudTd>
+                @{
+                    string detailstyle = "";
+                    if (context.Results.Any())
+                    {
+                        detailstyle = "background-color:orange";
+                    }
+                }
+                <MudTd DataLabel="detail">
+                    <MudFab HtmlTag="detail"
+                            Color="@Color.Success"
+                            Icon="@Icons.Outlined.Info"
+                            Style="@detailstyle"
+                            Size="@Size.Small"
+                            @onclick="() => NavigateToDetailsTests(context.TestId)" />
+                </MudTd>
+                <MudTd DataLabel="Delete">
+                    <MudFab HtmlTag="Delete"
+                            Color="@Color.Success"
+                            Icon="@Icons.Filled.Delete"
+                            Size="@Size.Small"
+                            OnClick="() => Remove(context)" />
+                </MudTd>
+            </RowTemplate>
+
+        </MudTable>
+    }
+}

@@ -1,0 +1,82 @@
+﻿@page "/run-test/{TestId}"
+@using ImpliciteTesterServer.Data;
+
+@if (loading)
+{
+    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+}
+else
+{
+
+    @if (!isStarted)
+    {
+        <MudGrid Class="d-flex justify-center">
+            <MudItem>
+                <MudNumericField HideSpinButtons="true" @bind-Value="@countdownSeconds" Label="Countdown" Variant="Variant.Text" Min="0" Max="10" />
+                <MudButton Class="align-center mt-5" @onclick="startAnimation" Variant="Variant.Filled" Color="Color.Primary">
+                    Start Test
+                </MudButton>
+            </MudItem>
+        </MudGrid>
+    }
+
+    @if (isCountdown)
+    {
+        <MudGrid Class="d-flex justify-center">
+            <MudItem>
+                <MudText Typo="Typo.h1" Style="font-size:60vh;">@countdownNumber</MudText>
+            </MudItem>
+        </MudGrid>
+    }
+
+    @if (isFinished)
+    {
+        <MudForm Model="@newResult" @ref="@form" @bind-IsValid="@success" @bind-Errors="@errors">
+            <MudGrid Class="d-flex justify-center">
+                <MudItem>
+                    <MudTextField @bind-Value="newResult.Name"
+                                  For="@(() => newResult.Name)"
+                                  Immediate="true"
+                                  Label="Test name"
+                                  Required="true" RequiredError="Name is required!" />
+                    <MudTextField @bind-Value="newResult.Participant"
+                                  For="@(() => newResult.Participant)"
+                                  Immediate="true"
+                                  Label="Participant"
+                                  Required="true" RequiredError="Participant is required!" />
+                </MudItem>
+                <MudItem>
+                    <MudTextField @bind-Value="newFaceReaderFileNames"
+                                  For="@(() => newFaceReaderFileNames)"
+                                  Immediate="true"
+                                  Label="Images"
+                                  Disabled="true" />
+                    <MudCardActions>
+                        <InputFile id="@($"FaceReaderFile")"
+                                   @bind-Value="FaceReaderFile"
+                                   For="@(() => FaceReaderFile)"
+                                   OnChange="@(e => this.SelectFile(e))"
+                                   hidden />
+                        <MudFab HtmlTag="label"
+                                Color="@Color.Success"
+                                Icon="@Icons.Filled.AttachFile"
+                                Size="@Size.Small"
+                                for="@($"FaceReaderFile")" />
+                    </MudCardActions>
+                    <MudButton Class="align-center mt-5" @onclick="SubmitAsync" Variant="Variant.Filled" Color="Color.Primary">
+                        Save result
+                    </MudButton>
+                </MudItem>
+            </MudGrid>
+        </MudForm>
+
+    }
+    @if (isStarted)
+    {
+        <div class="d-flex justify-center">
+            <MudImage ObjectPosition="ObjectPosition.Center" Height="700" Src="@showingSrc" Elevation="25" Class="rounded-lg align-center " />
+        </div>
+
+    }
+
+}

@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{C6518858-732A-4128-A512-51F3E4D1C15D}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.ImpliciteTesterServer PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Results/DetailsResults.razor.cs">
+    <Files>
+      <File FileName="Pages/Results/DetailsResults.razor" Line="115" Column="82" />
+      <File FileName="Pages/Results/DetailsResults.razor.cs" Line="164" Column="97" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ImpliciteTesterServer">
+            <Node name="ImpliciteTesterServer">
+              <Node name="Data" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="ImageUploads" expanded="True">
+                  <Node name="CreateImageUploads.razor" expanded="True" />
+                  <Node name="DetailsImageUploads.razor" expanded="True" />
+                </Node>
+                <Node name="Results" expanded="True">
+                  <Node name="DetailsResults.razor">
+                    <Node name="DetailsResults.razor.cs" selected="True" />
+                  </Node>
+                </Node>
+                <Node name="Tests" expanded="True">
+                  <Node name="CreateTests.razor" expanded="True" />
+                  <Node name="DetailsTests.razor" expanded="True" />
+                  <Node name="RunTests.razor" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="Data" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

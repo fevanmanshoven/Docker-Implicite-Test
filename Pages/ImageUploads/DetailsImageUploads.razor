@@ -1,0 +1,128 @@
+﻿@page "/details-upload/{ImageUploadId}"
+@using ImpliciteTesterServer.Data;
+
+
+<PageTitle>Images uploads</PageTitle>
+<MudText Typo="Typo.h3" GutterBottom="true">Images</MudText>
+@if (loading)
+{
+    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+}
+else
+{
+    <MudCard Class="mt-10">
+        <MudForm Model="@imageUpload" @ref="@form" @bind-IsValid="@success" @bind-Errors="@errors">
+            <MudTextField @bind-Value="imageUpload.Name"
+                          For="@(() => imageUpload.Name)"
+                          Immediate="true"
+                          Label="Name"
+                          Required="true" RequiredError="Name is required!" />
+            <MudSelect T="Category"
+                       @bind-SelectedValues="selectedCategories"
+                       Immediate="true"
+                       Label="Category"
+                       Required="true" RequiredError="Category is required!"
+                       AnchorOrigin="Origin.BottomCenter"
+                       MultiSelection="true">
+                @foreach (Category category in categories)
+                {
+                    <MudSelectItem T="Category" Value="@(category)" />
+                }
+            </MudSelect>
+
+            <MudGrid Class="mt-6 px-4">
+                <MudItem xs="6">
+                    <MudText Typo="Typo.subtitle2">SelectedValues: HashSet&lt;Category&gt;</MudText>
+                    <MudText Typo="Typo.subtitle2">{</MudText>
+                    @foreach (Category cat in selectedCategories)
+                    {
+                        @*<MudText Typo="Typo.body2" Class="pl-4">@(string.Join("", selectedCategorieOptions))</MudText>*@
+                        <MudText Typo="Typo.body2" Class="pl-4">@cat.CategoryId - @cat.Name</MudText>
+                    }
+                    <MudText Typo="Typo.subtitle2">}</MudText>
+                </MudItem>
+            </MudGrid>
+            <MudTextField @bind-Value="newImageNames"
+                          For="@(() => newImageNames)"
+                          Immediate="true"
+                          Label="Images"
+                          Disabled="true" />
+            <MudCardActions>
+                <InputFile multiple id="@($"uploadImages")"
+                           @bind-Value="imageFiles"
+                           For="@(() => imageFiles)"
+                           OnChange="@(e => this.SelectFile(e))"
+                           hidden />
+                <MudFab HtmlTag="label"
+                        Color="@Color.Success"
+                        Icon="@Icons.Filled.AttachFile"
+                        Size="@Size.Small"
+                        for="@($"uploadImages")" />
+            </MudCardActions>
+        </MudForm>
+    </MudCard>
+
+    <MudCard>
+        <MudCardActions>
+            <MudFab HtmlTag="label"
+                    Color="@Color.Success"
+                    Icon="@Icons.Filled.AddCircle"
+                    Size="@Size.Small"
+                    OnClick="SubmitAsync" />
+            <span style="padding-left: 15px;">Update Upload</span>
+        </MudCardActions>
+        @if (errors.Length > 0)
+        {
+            <MudCardActions Class="pa-4 mud-height-full">
+                <div class="d-block">
+                    <MudText Typo="Typo.subtitle2">@($"Errors ({errors.Length})")</MudText>
+                    @foreach (var error in errors)
+                    {
+                        <MudText Color="@Color.Error">@error</MudText>
+                    }
+                </div>
+            </MudCardActions>
+        }
+    </MudCard>
+
+    if (loadingUpload)
+    {
+        <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+    }
+    else
+    {
+        <MudTable Items="@this.images" Class="mt-5">
+
+            <HeaderContent>
+                <MudTh>Id</MudTh>
+                <MudTh>Category</MudTh>
+                <MudTh>Name</MudTh>
+                <MudTh>Images</MudTh>
+                <MudTh></MudTh>
+            </HeaderContent>
+
+            <RowTemplate>
+                <MudTd DataLabel="Id">
+                    @context.ImageId
+                </MudTd>
+                <MudTd DataLabel="Category">
+                    @string.Join(", ", imageUpload.Categories)
+                </MudTd>
+                <MudTd DataLabel="Name">
+                    @context.Name
+                </MudTd>
+                <MudTd DataLabel="Images">
+                    <MudImage Fluid="true" Src="@context.Source" Alt="@context.Name" Width="250" Elevation="25" Class="rounded-lg" />
+                </MudTd>
+                <MudTd DataLabel="Delete">
+                    <MudFab HtmlTag="Delete"
+                            Color="@Color.Success"
+                            Icon="@Icons.Filled.Delete"
+                            Size="@Size.Small"
+                            OnClick="() => Remove(context)" />
+                </MudTd>
+            </RowTemplate>
+
+        </MudTable>
+    }
+}

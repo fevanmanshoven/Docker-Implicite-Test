@@ -1,0 +1,54 @@
+﻿@page "/results"
+@using ImpliciteTesterServer.Data;
+
+<PageTitle>Results</PageTitle>
+<MudText Typo="Typo.h3" GutterBottom="true">Results</MudText>
+@if (loading)
+    {
+    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+    }
+    else
+    {
+        <MudTable Items="@this.results" Class="mt-5">
+
+            <HeaderContent>
+                <MudTh>Id</MudTh>
+                <MudTh>Name</MudTh>
+                <MudTh>Participant</MudTh>
+                <MudTh>Test</MudTh>
+                <MudTh></MudTh>
+                <MudTh></MudTh>
+
+            </HeaderContent>
+
+            <RowTemplate>
+                <MudTd DataLabel="Id">
+                    @context.ResultId
+                </MudTd>
+                <MudTd DataLabel="Name">
+                    @context.Name
+                </MudTd>
+                <MudTd DataLabel="Participant">
+                    @context.Participant
+                </MudTd>
+                <MudTd DataLabel="Test">
+                    @context.Test
+                </MudTd>
+                <MudTd DataLabel="detail">
+                    <MudFab HtmlTag="detail"
+                            Color="@Color.Success"
+                            Icon="@Icons.Outlined.Info"
+                            Size="@Size.Small"
+                            @onclick="() => NavigateToDetailsResult(context.ResultId)" />
+                </MudTd>
+                <MudTd DataLabel="Delete">
+                    <MudFab HtmlTag="Delete"
+                            Color="@Color.Success"
+                            Icon="@Icons.Filled.Delete"
+                            Size="@Size.Small"
+                            OnClick="() => Remove(context)" />
+                </MudTd>
+            </RowTemplate>
+
+        </MudTable>
+    }

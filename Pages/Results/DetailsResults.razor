@@ -1,0 +1,151 @@
+﻿@page "/details-result/{ResultId}"
+@using ImpliciteTesterServer.Data;
+
+
+
+<PageTitle>Result</PageTitle>
+<MudText Typo="Typo.h3" GutterBottom="true">Results</MudText>
+@if (loading)
+    {
+    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+    }
+    else
+    {
+    <MudForm Model="@test" @ref="@detailForm" @bind-IsValid="@success" @bind-Errors="@errors">
+        <MudGrid Class="d-flex justify-center">
+            <MudItem xs="6">
+                <MudCard Class="d-flex align-center justify-center mud-width-full gap-4">
+                    <MudSelect T="String"
+                               @bind-SelectedValues="selectedPosEmotions"
+                               Immediate="true"
+                               Label="Positive Emotions"
+                               AnchorOrigin="Origin.BottomCenter"
+                               Required="true"
+                               MultiSelection="true">
+                        @foreach (String emotion in emotions)
+                            {
+                            <MudSelectItem T="String" Value="@(emotion)" />
+                            }
+                    </MudSelect>
+                    <MudSelect T="String"
+                               @bind-SelectedValues="selectedNegEmotions"
+                               Immediate="true"
+                               Required="true"
+                               Label="Negative Emotions"
+                               AnchorOrigin="Origin.BottomCenter"
+                               MultiSelection="true">
+                        @foreach (String emotion in emotions)
+                            {
+                            <MudSelectItem T="String" Value="@(emotion)" />
+                            }
+                    </MudSelect>
+                </MudCard>
+            </MudItem>
+        </MudGrid>
+    </MudForm>
+    <MudGrid Class="d-flex justify-center">
+        <MudItem>
+            <MudCheckBox @bind-Checked="@detailedOverview">Detailed</MudCheckBox>
+        </MudItem>
+        <MudItem>
+            <MudButton Class="align-center mt-2" @onclick="calculateResults" Variant="Variant.Filled" Color="Color.Primary">
+                Calculate result overview
+            </MudButton>
+        </MudItem>
+    </MudGrid>
+
+    @if (startedcalculating && !finishedcalculating)
+        {
+        <MudProgressCircular Color="Color.Primary" Size="Size.Medium" Indeterminate="true" />
+        }
+    @if (startedcalculating && finishedcalculating)
+        {
+
+    <MudGrid Spacing="2">
+        <MudItem xs="12" md="12">
+            <MudText Typo="Typo.h5" GutterBottom="true">All selected emotions</MudText>
+        </MudItem>
+            <MudItem xs="12" md="6">
+                <MudCard Class="pa-4 d-flex align-center flex-column mud-elevation-4">
+                    <MudText Typo="Typo.h6" GutterBottom="true">@posCategories</MudText>
+                    <MudChart ChartType="ChartType.Pie"
+                              InputData="@postiveAllImagesData.ToArray()"
+                              Width="480px"
+                              Height="320px"
+                              InputLabels="@postiveAllImagesLabels.ToArray()"></MudChart>
+                </MudCard>
+            </MudItem>
+            <MudItem xs="12" md="6">
+                <MudCard Class="pa-4 d-flex align-center flex-column mud-elevation-4">
+                    <MudText Typo="Typo.h6" GutterBottom="true">@negCategories</MudText>
+                    <MudChart ChartType="ChartType.Pie"
+                              InputData="@negativeAllImagesData.ToArray()"
+                              Width="480px"
+                              Height="320px"
+                              InputLabels="@negativeAllImagesLabels.ToArray()"></MudChart>
+                </MudCard>
+            </MudItem>
+    </MudGrid>
+
+    <MudGrid Spacing="2">
+        <MudItem xs="12" md="12">
+            <MudText Typo="Typo.h6" GutterBottom="true">All selected dominant emotions</MudText>
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudCard Class="pa-4 d-flex align-center flex-column mud-elevation-4">
+                <MudText Typo="Typo.h6" GutterBottom="true">@posCategories</MudText>
+                <MudChart ChartType="ChartType.Pie"
+                          InputData="@positiveImageEmotionsData.ToArray()"
+                          Width="480px"
+                          Height="320px"
+                          InputLabels="@positiveImageEmotionsLabels.ToArray()"></MudChart>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudCard Class="pa-4 d-flex align-center flex-column mud-elevation-4">
+                <MudText Typo="Typo.h6" GutterBottom="true">@negCategories</MudText>
+                <MudChart ChartType="ChartType.Pie"
+                          InputData="@negativeImageEmotionsData.ToArray()"
+                          Width="480px"
+                          Height="320px"
+                          InputLabels="@negativeImageEmotionsLabels.ToArray()"></MudChart>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+
+    <MudGrid Spacing="2">
+        <MudItem xs="12" md="12">
+            <MudText Typo="Typo.h6" GutterBottom="true">Positive / Negative total</MudText>
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudCard Class="pa-4 d-flex align-center flex-column mud-elevation-4">
+                <MudText Typo="Typo.h6" GutterBottom="true">@posCategories</MudText>
+                <MudChart ChartType="ChartType.Pie"
+                          InputData="@postiveStrictImagesData.ToArray()"
+                          Width="480px"
+                          Height="320px"
+                          InputLabels="@postiveStrictImagesLabels.ToArray()"></MudChart>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudCard Class="pa-4 d-flex align-center flex-column mud-elevation-4">
+                <MudText Typo="Typo.h6" GutterBottom="true">@negCategories</MudText>
+                <MudChart ChartType="ChartType.Pie"
+                          InputData="@negativeStrictImagesData.ToArray()"
+                          Width="480px"
+                          Height="320px"
+                          InputLabels="@negativeStrictImagesLabels.ToArray()"></MudChart>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+
+    <MudGrid Class="pt-4">
+        <MudItem xs="12">
+            @foreach (string time in timeLineResult)
+            {
+                <MudText>@time</MudText>
+            }
+         </MudItem>
+    </MudGrid>
+        }
+    }

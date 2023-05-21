@@ -1,0 +1,222 @@
+﻿@page "/details-test/{TestId}"
+@using ImpliciteTesterServer.Data;
+
+
+<PageTitle>Test upload</PageTitle>
+<MudText Typo="Typo.h3" GutterBottom="true">Tests</MudText>
+@if (loading)
+{
+    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+}
+else
+{
+    bool disabled = false;
+    if (context.Results.Where(r => r.Test == test).Any())
+    {
+        disabled = true;
+        <MudText Typo="Typo.h6" Style="color:red" GutterBottom="true">Editing disabled when results are linked</MudText>
+    }
+
+    <MudForm Model="@test" @ref="@testForm" @bind-IsValid="@success" @bind-Errors="@errors">
+        <MudGrid>
+            <MudItem xs="12">
+                <MudCard Class="d-flex align-center justify-center mud-width-full">
+                    <MudTextField @bind-Value="test.Name"
+                                  For="@(() => test.Name)"
+                                  Immediate="true"
+                                  Label="Name"
+                                  Disabled="@disabled"
+                                  Required="true" RequiredError="Name is required!" />
+                </MudCard>
+            </MudItem>
+            <MudItem xs="6">
+                <MudCard Class="d-flex align-center justify-center mud-width-full">
+                    <MudSelect T="Category"
+                               @bind-SelectedValues="selectedPosCategories"
+                               Immediate="true"
+                               Label="Positive Category"
+                               Disabled="@disabled"
+                               AnchorOrigin="Origin.BottomCenter"
+                               MultiSelection="true">
+                        @foreach (Category category in categories)
+                        {
+                            <MudSelectItem T="Category" Value="@(category)" />
+                        }
+                    </MudSelect>
+                    <MudSelect T="ImageUpload"
+                               @bind-SelectedValues="selectedPosImageUploads"
+                               Immediate="true"
+                               Label="Positive ImageUpload"
+                               Disabled="@disabled"
+                               AnchorOrigin="Origin.BottomCenter"
+                               MultiSelection="true">
+                        @foreach (ImageUpload imageUpload in imageUploads)
+                        {
+                            <MudSelectItem T="ImageUpload" Value="@(imageUpload)" />
+                        }
+                    </MudSelect>
+                </MudCard>
+            </MudItem>
+            <MudItem xs="6">
+                <MudCard Class="d-flex align-center justify-center mud-width-full">
+                    <MudSelect T="Category"
+                               @bind-SelectedValues="selectedNegCategories"
+                               Immediate="true"
+                               Label="Negative Category"
+                               Disabled="@disabled"
+                               AnchorOrigin="Origin.BottomCenter"
+                               MultiSelection="true">
+                        @foreach (Category category in categories)
+                        {
+                            <MudSelectItem T="Category" Value="@(category)" />
+                        }
+                    </MudSelect>
+                    <MudSelect T="ImageUpload"
+                               @bind-SelectedValues="selectedNegImageUploads"
+                               Immediate="true"
+                               Label="Negative ImageUpload"
+                               Disabled="@disabled"
+                               AnchorOrigin="Origin.BottomCenter"
+                               MultiSelection="true">
+                        @foreach (ImageUpload imageUpload in imageUploads)
+                        {
+                            <MudSelectItem T="ImageUpload" Value="@(imageUpload)" />
+                        }
+                    </MudSelect>
+                </MudCard>
+            </MudItem>
+        </MudGrid>
+    </MudForm>
+    <MudCard>
+        <MudCardActions>
+            <MudFab HtmlTag="label"
+                    Color="@Color.Success"
+                    Icon="@Icons.Filled.AddCircle"
+                    Disabled="@disabled"
+                    Size="@Size.Small"
+                    OnClick="SubmitTestAsync" />
+            <span style="padding-left: 15px;">Update Test</span>
+        </MudCardActions>
+        @if (errors.Length > 0)
+        {
+            <MudCardActions Class="pa-4 mud-height-full">
+                <div class="d-block">
+                    <MudText Typo="Typo.subtitle2">@($"Errors ({errors.Length})")</MudText>
+                    @foreach (var error in errors)
+                    {
+                        <MudText Color="@Color.Error">@error</MudText>
+                    }
+                </div>
+            </MudCardActions>
+        }
+    </MudCard>
+
+
+    <MudCard Class="mt-10">
+        <MudForm Model="@newFase" @ref="@faseForm" @bind-IsValid="@success" @bind-Errors="@errors">
+            <MudTextField @bind-Value="newFase.Name"
+                          For="@(() => newFase.Name)"
+                          Immediate="true"
+                          Label="Name"
+                          Disabled="@disabled"
+                          Required="true" RequiredError="Name is required!" />
+            <MudSelect T="FaseType"
+                       @bind-SelectedValues="@selectedFasetypes"
+                       Immediate="true"
+                       Label="FaseType"
+                       Disabled="@disabled"
+                       Required="true" RequiredError="Fase type is required!"
+                       AnchorOrigin="Origin.BottomCenter"
+                       MultiSelection="false">
+                @foreach (FaseType faseType in faseTypes)
+                {
+                    <MudSelectItem T="FaseType" Value="@(faseType)" />
+                }
+            </MudSelect>
+            <MudNumericField @bind-Value="@newFase.Duration" Label="Duration (seconds)" Disabled="@disabled" Variant="Variant.Text" Min="1" Max="60" />
+            <MudNumericField @bind-Value="@newFase.ImgAmount" Label="Maximum image amount" Disabled="@disabled" Variant="Variant.Text" Min="1" />
+        </MudForm>
+
+    </MudCard>
+    <MudCard>
+        <MudCardActions>
+            <MudFab HtmlTag="label"
+                    Color="@Color.Success"
+                    Icon="@Icons.Filled.AddCircle"
+                    Disabled="@disabled"
+                    Size="@Size.Small"
+                    OnClick="SubmitFaseAsync" />
+            <span style="padding-left: 15px;">Add Fase</span>
+        </MudCardActions>
+        @if (errors.Length > 0)
+        {
+            <MudCardActions Class="pa-4 mud-height-full">
+                <div class="d-block">
+                    <MudText Typo="Typo.subtitle2">@($"Errors ({errors.Length})")</MudText>
+                    @foreach (var error in errors)
+                    {
+                        <MudText Color="@Color.Error">@error</MudText>
+                    }
+                </div>
+            </MudCardActions>
+        }
+    </MudCard>
+
+    if (loadingUpload)
+    {
+        <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+    }
+    else
+    {
+        <MudTable Items="@this.fases" Class="mt-5">
+
+            <HeaderContent>
+                <MudTh>Id</MudTh>
+                <MudTh>Name</MudTh>
+                <MudTh>Fase type</MudTh>
+                <MudTh>Duration</MudTh>
+                <MudTh>Image amount</MudTh>
+                <MudTh>Images</MudTh>
+                <MudTh></MudTh>
+            </HeaderContent>
+
+            <RowTemplate>
+                <MudTd DataLabel="Id">
+                    @context.FaseId
+                </MudTd>
+                <MudTd DataLabel="Name">
+                    @context.Name
+                </MudTd>
+                <MudTd DataLabel="FaseType">
+                    @context.FaseType
+                </MudTd>
+                <MudTd DataLabel="Duration">
+                    @context.Duration
+                </MudTd>
+                <MudTd DataLabel="Image amount">
+                    @context.ImgAmount
+                </MudTd>
+                <MudTd DataLabel="Images">
+                    @string.Join(", ", @context.FaseTypeImages.Select(f => f.Image))
+                    @*<MudGrid>
+                        @foreach (Image img in context.Images)
+                        {
+                            <MudItem xs="12">
+                                <MudImage Fluid="true" Src="@img.Source" Alt="@img.Name" Width="250" Elevation="25" Class="rounded-lg" />
+                            </MudItem>
+                        }
+                        </MudGrid>*@
+                </MudTd>
+                <MudTd DataLabel="Delete">
+                    <MudFab HtmlTag="Delete"
+                            Color="@Color.Success"
+                            Icon="@Icons.Filled.Delete"
+                            Disabled="@disabled"
+                            Size="@Size.Small"
+                            OnClick="() => Remove(context)" />
+                </MudTd>
+            </RowTemplate>
+
+        </MudTable>
+    }
+}
