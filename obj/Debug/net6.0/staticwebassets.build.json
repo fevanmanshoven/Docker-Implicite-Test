@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5tJRuERkDUkEBQwh9+Mii1LLyu5fOVPkAeug357Hbuo=",
+  "Hash": "NhwTigmJ3FeIBfbGhsPUduCq+hkMBJntJSTY59uZKQc=",
   "Source": "ImpliciteTesterServer",
   "BasePath": "_content/ImpliciteTesterServer",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "ImpliciteTesterServer/wwwroot",
+      "Name": "ImpliciteTesterServer\\wwwroot",
       "Source": "ImpliciteTesterServer",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/fevanmanshoven/.nuget/packages/mudblazor/6.2.5/staticwebassets/MudBlazor.min.css",
+      "Identity": "C:\\Users\\fevan\\.nuget\\packages\\mudblazor\\6.2.5\\staticwebassets\\MudBlazor.min.css",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/fevanmanshoven/.nuget/packages/mudblazor/6.2.5/staticwebassets/",
+      "ContentRoot": "C:\\Users\\fevan\\.nuget\\packages\\mudblazor\\6.2.5\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/fevanmanshoven/.nuget/packages/mudblazor/6.2.5/staticwebassets/MudBlazor.min.css"
+      "OriginalItemSpec": "C:\\Users\\fevan\\.nuget\\packages\\mudblazor\\6.2.5\\staticwebassets\\MudBlazor.min.css"
     },
     {
-      "Identity": "/Users/fevanmanshoven/.nuget/packages/mudblazor/6.2.5/staticwebassets/MudBlazor.min.js",
+      "Identity": "C:\\Users\\fevan\\.nuget\\packages\\mudblazor\\6.2.5\\staticwebassets\\MudBlazor.min.js",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/fevanmanshoven/.nuget/packages/mudblazor/6.2.5/staticwebassets/",
+      "ContentRoot": "C:\\Users\\fevan\\.nuget\\packages\\mudblazor\\6.2.5\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.js",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/fevanmanshoven/.nuget/packages/mudblazor/6.2.5/staticwebassets/MudBlazor.min.js"
+      "OriginalItemSpec": "C:\\Users\\fevan\\.nuget\\packages\\mudblazor\\6.2.5\\staticwebassets\\MudBlazor.min.js"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/obj/Debug/net6.0/scopedcss/bundle/ImpliciteTesterServer.styles.css",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ImpliciteTesterServer.styles.css",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/obj/Debug/net6.0/scopedcss/bundle/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "ImpliciteTesterServer.styles.css",
       "AssetKind": "All",
@@ -65,13 +65,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/obj/Debug/net6.0/scopedcss/bundle/ImpliciteTesterServer.styles.css"
+      "OriginalItemSpec": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ImpliciteTesterServer.styles.css"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/obj/Debug/net6.0/scopedcss/projectbundle/ImpliciteTesterServer.bundle.scp.css",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ImpliciteTesterServer.bundle.scp.css",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/obj/Debug/net6.0/scopedcss/projectbundle/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "ImpliciteTesterServer.bundle.scp.css",
       "AssetKind": "All",
@@ -82,13 +82,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/obj/Debug/net6.0/scopedcss/projectbundle/ImpliciteTesterServer.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ImpliciteTesterServer.bundle.scp.css"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/.DS_Store",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\.DS_Store",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": ".DS_Store",
       "AssetKind": "All",
@@ -99,13 +99,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/.DS_Store"
+      "OriginalItemSpec": "wwwroot\\.DS_Store"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/Data/.DS_Store",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\.DS_Store",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "Data/.DS_Store",
       "AssetKind": "All",
@@ -116,13 +116,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/.DS_Store"
+      "OriginalItemSpec": "wwwroot\\Data\\.DS_Store"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/Data/FaceReader/Results_01_0.txt",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\FaceReader\\Results_01_0.txt",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "Data/FaceReader/Results_01_0.txt",
       "AssetKind": "All",
@@ -133,13 +133,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/FaceReader/Results_01_0.txt"
+      "OriginalItemSpec": "wwwroot\\Data\\FaceReader\\Results_01_0.txt"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/Data/FaceReader/Test met Shtinky_0.txt",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\FaceReader\\Test met Shtinky_0.txt",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "Data/FaceReader/Test met Shtinky_0.txt",
       "AssetKind": "All",
@@ -150,13 +150,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/FaceReader/Test met Shtinky_0.txt"
+      "OriginalItemSpec": "wwwroot\\Data\\FaceReader\\Test met Shtinky_0.txt"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/Data/Images/.DS_Store",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\.DS_Store",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "Data/Images/.DS_Store",
       "AssetKind": "All",
@@ -167,13 +167,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/Images/.DS_Store"
+      "OriginalItemSpec": "wwwroot\\Data\\Images\\.DS_Store"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/Data/Images/Mannen_0.jpg",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Mannen_0.jpg",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "Data/Images/Mannen_0.jpg",
       "AssetKind": "All",
@@ -184,13 +184,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/Images/Mannen_0.jpg"
+      "OriginalItemSpec": "wwwroot\\Data\\Images\\Mannen_0.jpg"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/Data/Images/Mannen_1.jpg",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Mannen_1.jpg",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "Data/Images/Mannen_1.jpg",
       "AssetKind": "All",
@@ -201,13 +201,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/Images/Mannen_1.jpg"
+      "OriginalItemSpec": "wwwroot\\Data\\Images\\Mannen_1.jpg"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/Data/Images/Mannen_2.jpg",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Mannen_2.jpg",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "Data/Images/Mannen_2.jpg",
       "AssetKind": "All",
@@ -218,13 +218,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/Images/Mannen_2.jpg"
+      "OriginalItemSpec": "wwwroot\\Data\\Images\\Mannen_2.jpg"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/Data/Images/Vrouwen_0.jpg",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Vrouwen_0.jpg",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "Data/Images/Vrouwen_0.jpg",
       "AssetKind": "All",
@@ -235,13 +235,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/Images/Vrouwen_0.jpg"
+      "OriginalItemSpec": "wwwroot\\Data\\Images\\Vrouwen_0.jpg"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/Data/Images/Vrouwen_1.jpg",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Vrouwen_1.jpg",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "Data/Images/Vrouwen_1.jpg",
       "AssetKind": "All",
@@ -252,13 +252,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/Images/Vrouwen_1.jpg"
+      "OriginalItemSpec": "wwwroot\\Data\\Images\\Vrouwen_1.jpg"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/Data/Images/Vrouwen_2.jpg",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Vrouwen_2.jpg",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "Data/Images/Vrouwen_2.jpg",
       "AssetKind": "All",
@@ -269,13 +269,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/Images/Vrouwen_2.jpg"
+      "OriginalItemSpec": "wwwroot\\Data\\Images\\Vrouwen_2.jpg"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/Data/Images/Vrouwen_3.jpg",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Vrouwen_3.jpg",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "Data/Images/Vrouwen_3.jpg",
       "AssetKind": "All",
@@ -286,13 +286,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/Images/Vrouwen_3.jpg"
+      "OriginalItemSpec": "wwwroot\\Data\\Images\\Vrouwen_3.jpg"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/Data/Images/Vrouwen_4.jpg",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Vrouwen_4.jpg",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "Data/Images/Vrouwen_4.jpg",
       "AssetKind": "All",
@@ -303,13 +303,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/Images/Vrouwen_4.jpg"
+      "OriginalItemSpec": "wwwroot\\Data\\Images\\Vrouwen_4.jpg"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/Data/Images/Vrouwen_5.jpg",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Vrouwen_5.jpg",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "Data/Images/Vrouwen_5.jpg",
       "AssetKind": "All",
@@ -320,13 +320,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/Images/Vrouwen_5.jpg"
+      "OriginalItemSpec": "wwwroot\\Data\\Images\\Vrouwen_5.jpg"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/Data/Images/Vrouwen_test_imageupload_0.jpg",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Vrouwen_test_imageupload_0.jpg",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "Data/Images/Vrouwen_test_imageupload_0.jpg",
       "AssetKind": "All",
@@ -337,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/Images/Vrouwen_test_imageupload_0.jpg"
+      "OriginalItemSpec": "wwwroot\\Data\\Images\\Vrouwen_test_imageupload_0.jpg"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/favicon.ico",
+      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\favicon.ico",
       "SourceId": "ImpliciteTesterServer",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/wwwroot/",
+      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
       "BasePath": "_content/ImpliciteTesterServer",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -354,7 +354,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/favicon.ico"
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
     }
   ]
 }
