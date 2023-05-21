@@ -8,7 +8,8 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["ImpliciteTesterServer.csproj", "."]
-RUN dotnet tool install dotnet-ef
+RUN dotnet tool install --global dotnet-ef
+ENV PATH="$PATH:/root/.dotnet/tools"
 RUN dotnet ef migrations add InitialCreate
 RUN dotnet ef database update
 RUN dotnet restore "./ImpliciteTesterServer.csproj"
