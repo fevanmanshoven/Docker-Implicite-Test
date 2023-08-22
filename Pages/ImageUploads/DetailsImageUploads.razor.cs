@@ -57,7 +57,6 @@ namespace ImpliciteTesterServer.Pages.ImageUploads
 
         protected void getCategories()
         {
-            Snackbar.Add("Category loading...");
             categories = context.Categories.ToList();
         }
 

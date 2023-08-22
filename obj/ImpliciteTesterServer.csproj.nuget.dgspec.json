@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/ImpliciteTesterServer.csproj": {}
+    "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/ImpliciteTesterServer.csproj": {}
   },
   "projects": {
-    "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/ImpliciteTesterServer.csproj": {
+    "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/ImpliciteTesterServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/ImpliciteTesterServer.csproj",
+        "projectUniqueName": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/ImpliciteTesterServer.csproj",
         "projectName": "ImpliciteTesterServer",
-        "projectPath": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/ImpliciteTesterServer.csproj",
+        "projectPath": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/ImpliciteTesterServer.csproj",
         "packagesPath": "/Users/fevanmanshoven/.nuget/packages/",
-        "outputPath": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/obj/",
+        "outputPath": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/fevanmanshoven/.nuget/NuGet/NuGet.Config"

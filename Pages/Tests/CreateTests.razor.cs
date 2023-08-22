@@ -74,13 +74,11 @@ namespace ImpliciteTesterServer.Pages.Tests
 
         protected void getCategories()
         {
-            Snackbar.Add("Category loading...");
             categories = context.Categories.ToList();
         }
 
         protected void getImageUploads()
         {
-            Snackbar.Add("ImageUploads loading...");
             imageUploads = context.ImageUploads.ToList();
         }
 
@@ -88,6 +86,7 @@ namespace ImpliciteTesterServer.Pages.Tests
         {
             Snackbar.Add("Tests loading...");
             tests = context.Tests.Include(t => t.Fases).Include(t => t.Results).ToList();
+            Snackbar.Add("Tests loaded...");
         }
 
         private async Task SubmitAsync()

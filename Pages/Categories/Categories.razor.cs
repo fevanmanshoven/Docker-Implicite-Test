@@ -49,6 +49,8 @@ namespace ImpliciteTesterServer.Pages.Categories
         {
             Snackbar.Add("Category loading...");
             categories = context.Categories.ToList();
+            Snackbar.Add("Category loaded...");
+
         }
 
         //protected async Task getCategories()

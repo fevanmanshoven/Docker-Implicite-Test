@@ -61,7 +61,6 @@ namespace ImpliciteTesterServer.Pages.ImageUploads
 
         protected void getCategories()
         {
-            Snackbar.Add("Category loading...");
             categories = context.Categories.ToList();
         }
 
@@ -80,6 +79,7 @@ namespace ImpliciteTesterServer.Pages.ImageUploads
         {
             Snackbar.Add("Images loading...");
             imageUploads = context.ImageUploads.Include(i => i.Categories).Include(i => i.Images).ToList();
+            Snackbar.Add("Images loaded...");
         }
 
         //protected async Task getImages()

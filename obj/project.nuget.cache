@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CfHWrZxIPbJmpft2FPc0Olgis/ZRcEI4UX7odu9hiCKPZgGtktxQch62txA92dvj0O2QymzvwTmmT1yffB4jDg==",
+  "dgSpecHash": "bGCYwVWJg6rx9kwop4UXlmgsX/3wkFgyrcG46uimz3Kt9jxxkHuatAIdBshu0i5oVvJlw5/fNu/j4DY6MMBcSA==",
   "success": true,
-  "projectFilePath": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/ImpliciteTesterServer.csproj",
+  "projectFilePath": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/DockerImpliciteTest.csproj",
   "expectedPackageFiles": [
+    "/Users/fevanmanshoven/.nuget/packages/blazored.video/1.0.1/blazored.video.1.0.1.nupkg.sha512",
     "/Users/fevanmanshoven/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/fevanmanshoven/.nuget/packages/microsoft.aspnetcore.authorization/6.0.11/microsoft.aspnetcore.authorization.6.0.11.nupkg.sha512",
     "/Users/fevanmanshoven/.nuget/packages/microsoft.aspnetcore.components/6.0.11/microsoft.aspnetcore.components.6.0.11.nupkg.sha512",
@@ -42,7 +43,10 @@
     "/Users/fevanmanshoven/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/fevanmanshoven/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/Users/fevanmanshoven/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
-    "/Users/fevanmanshoven/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
+    "/Users/fevanmanshoven/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
+    "/Users/fevanmanshoven/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.20/microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512",
+    "/Users/fevanmanshoven/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.20/microsoft.netcore.app.host.osx-arm64.6.0.20.nupkg.sha512",
+    "/Users/fevanmanshoven/.nuget/packages/microsoft.netcore.app.ref/6.0.20/microsoft.netcore.app.ref.6.0.20.nupkg.sha512"
   ],
   "logs": []
 }

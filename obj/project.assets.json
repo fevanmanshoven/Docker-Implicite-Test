@@ -2,6 +2,25 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Blazored.Video/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.0",
+          "Microsoft.AspNetCore.Components.Web": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Blazored.Video.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Blazored.Video.dll": {}
+        },
+        "build": {
+          "buildTransitive/Blazored.Video.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Blazored.Video.props": {}
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -733,6 +752,24 @@
     }
   },
   "libraries": {
+    "Blazored.Video/1.0.1": {
+      "sha512": "aQbSLUBo/8Me1KHyZDs+yXar0nLu9oUzWx76UXikNXGXaEHLQKFQYZ9lb8YsSvzp9E3YnELoItxJFipF1n54Xg==",
+      "type": "package",
+      "path": "blazored.video/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazored.video.1.0.1.nupkg.sha512",
+        "blazored.video.nuspec",
+        "build/Blazored.Video.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Blazored.Video.props",
+        "buildTransitive/Blazored.Video.props",
+        "icon.png",
+        "lib/net6.0/Blazored.Video.dll",
+        "staticwebassets/blazoredVideo.js"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -1638,6 +1675,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Blazored.Video >= 1.0.1",
       "Microsoft.Data.Sqlite >= 7.0.5",
       "Microsoft.Data.Sqlite.Core >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
@@ -1651,11 +1689,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/ImpliciteTesterServer.csproj",
-      "projectName": "ImpliciteTesterServer",
-      "projectPath": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/ImpliciteTesterServer.csproj",
+      "projectUniqueName": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/DockerImpliciteTest.csproj",
+      "projectName": "DockerImpliciteTest",
+      "projectPath": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/DockerImpliciteTest.csproj",
       "packagesPath": "/Users/fevanmanshoven/.nuget/packages/",
-      "outputPath": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/BP/obj/",
+      "outputPath": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/fevanmanshoven/.nuget/NuGet/NuGet.Config"
@@ -1676,12 +1714,19 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "default"
       }
     },
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Blazored.Video": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
           "Microsoft.Data.Sqlite": {
             "target": "Package",
             "version": "[7.0.5, )"
@@ -1716,6 +1761,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.20, 6.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-arm64",
+            "version": "[6.0.20, 6.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.20, 6.0.20]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1724,7 +1783,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.407/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100-preview.7.23376.3/RuntimeIdentifierGraph.json"
       }
     }
   }

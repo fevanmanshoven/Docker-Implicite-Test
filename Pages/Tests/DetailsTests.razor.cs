@@ -59,7 +59,7 @@ namespace ImpliciteTesterServer.Pages.Tests
 
         protected void getTests(int testId)
         {
-            Snackbar.Add("Fases loading...");
+            Snackbar.Add("Test loading...");
             test = context.Tests.Where(t => t.TestId == testId)
                 .Include(i => i.PosCategories)
                 .Include(i => i.PosImageUploads)
@@ -74,17 +74,16 @@ namespace ImpliciteTesterServer.Pages.Tests
 
             fases = test.Fases;
 
+            Snackbar.Add("Test loaded...");
         }
 
         protected void getCategories()
         {
-            Snackbar.Add("Category loading...");
             categories = context.Categories.ToList();
         }
 
         protected List<FaseTypeImage> getPosFaseImageUploads(int amount)
         {
-            Snackbar.Add("ImageUploads loading...");
             List<Category> posCategories = selectedPosCategories.ToList();
 
             List<FaseTypeImage> posFaceTypeImages = new();
@@ -110,7 +109,6 @@ namespace ImpliciteTesterServer.Pages.Tests
 
         protected List<FaseTypeImage> getNegFaseImageUploads(int amount)
         {
-            Snackbar.Add("ImageUploads loading...");
             List<Category> negCategories = selectedNegCategories.ToList();
 
             List<FaseTypeImage> negFaceTypeImages = new();

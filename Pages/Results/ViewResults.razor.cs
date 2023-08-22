@@ -53,6 +53,7 @@ namespace ImpliciteTesterServer.Pages.Results
         {
             Snackbar.Add("Results loading...");
             results = context.Results.Include(r => r.Test).ToList();
+            Snackbar.Add("Results loaded...");
         }
 
         private async Task Remove(Result result)

@@ -86,6 +86,8 @@ namespace ImpliciteTesterServer.Pages.Results
 
             posCategories = (string.Join(", ", test.PosCategories.Select(f => f.Name)));
             negCategories = (string.Join(", ", test.NegCategories.Select(f => f.Name)));
+
+            Snackbar.Add("Result loaded...");
         }
 
         private void setTimeLineResults()
