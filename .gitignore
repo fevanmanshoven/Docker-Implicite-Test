@@ -540,4 +540,4 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/aspnetcore,visualstudio,visualstudiocode
-.vs/ImpliciteTesterServer/xs/UserPrefs.xml
+.vs/DockerImpliciteTest/xs/UserPrefs.xml

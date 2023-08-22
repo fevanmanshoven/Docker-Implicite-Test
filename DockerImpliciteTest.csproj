@@ -6,7 +6,7 @@
 	  <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'ImpliciteTesterServer' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'DockerImpliciteTest' " />
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>

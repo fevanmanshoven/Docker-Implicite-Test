@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Components.Forms;
 
-namespace ImpliciteTesterServer.Data
+namespace DockerImpliciteTest.Data
 {
 	public class FaceReaderData
 	{

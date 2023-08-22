@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Hosting.StaticWebAssets;
-using ImpliciteTesterServer.Data;
+using DockerImpliciteTest.Data;
 using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
