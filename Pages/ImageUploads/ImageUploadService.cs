@@ -1,5 +1,5 @@
 ﻿using System;
-namespace ImpliciteTesterServer.Pages.ImageUploads
+namespace DockerImpliciteTest.Pages.ImageUploads
 {
 	public class ImageUploadService
 	{

@@ -7,7 +7,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "ImpliciteTesterServer": {
+    "DockerImpliciteTest": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

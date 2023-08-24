@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Specialized;
 
-namespace ImpliciteTesterServer.Data
+namespace DockerImpliciteTest.Data
 {
 	public class Fase
 	{

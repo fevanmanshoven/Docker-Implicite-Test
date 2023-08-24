@@ -1,5 +1,5 @@
 ﻿using System;
-namespace ImpliciteTesterServer.Data
+namespace DockerImpliciteTest.Data
 {
 	public class FaseTypeImage
 	{

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Text.Json;
-using ImpliciteTesterServer.Data;
-using ImpliciteTesterServer.Infrastructure;
+using DockerImpliciteTest.Data;
+using DockerImpliciteTest.Infrastructure;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Hosting.Server;
@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 using MudBlazor;
 using static MudBlazor.CategoryTypes;
 
-namespace ImpliciteTesterServer.Pages.Results
+namespace DockerImpliciteTest.Pages.Results
 {
     public partial class DetailsResults
     {
@@ -86,6 +86,8 @@ namespace ImpliciteTesterServer.Pages.Results
 
             posCategories = (string.Join(", ", test.PosCategories.Select(f => f.Name)));
             negCategories = (string.Join(", ", test.NegCategories.Select(f => f.Name)));
+
+            Snackbar.Add("Result loaded...");
         }
 
         private void setTimeLineResults()

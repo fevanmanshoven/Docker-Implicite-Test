@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Text.Json;
-using ImpliciteTesterServer.Data;
-using ImpliciteTesterServer.Infrastructure;
+using DockerImpliciteTest.Data;
+using DockerImpliciteTest.Infrastructure;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Hosting.Server;
@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MudBlazor;
 
-namespace ImpliciteTesterServer.Pages.ImageUploads
+namespace DockerImpliciteTest.Pages.ImageUploads
 {
     public partial class DetailsImageUploads
     {
@@ -57,7 +57,6 @@ namespace ImpliciteTesterServer.Pages.ImageUploads
 
         protected void getCategories()
         {
-            Snackbar.Add("Category loading...");
             categories = context.Categories.ToList();
         }
 

@@ -9,6 +9,7 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ImpliciteTesterServer
 build_property.RootNamespace = ImpliciteTesterServer
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\fevan\Source\Repos\fevanmanshoven\Docker-Implicite-Test\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
@@ -86,4 +87,83 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/fevan/Source/Repos/fevanmanshoven/Docker-Implicite-Test/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+=======
+build_property.ProjectDir = /Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/Pages/Categories/Categories.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2F0ZWdvcmllcy9DYXRlZ29yaWVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/Pages/ImageUploads/CreateImageUploads.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW1hZ2VVcGxvYWRzL0NyZWF0ZUltYWdlVXBsb2Fkcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/Pages/ImageUploads/DetailsImageUploads.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW1hZ2VVcGxvYWRzL0RldGFpbHNJbWFnZVVwbG9hZHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/Pages/Results/DetailsResults.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzdWx0cy9EZXRhaWxzUmVzdWx0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/Pages/Results/ViewResults.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzdWx0cy9WaWV3UmVzdWx0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/Pages/Results/ViewResultsFromTest.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzdWx0cy9WaWV3UmVzdWx0c0Zyb21UZXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/Pages/Tests/CreateTests.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGVzdHMvQ3JlYXRlVGVzdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/Pages/Tests/DetailsTests.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGVzdHMvRGV0YWlsc1Rlc3RzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/Pages/Tests/RunTests.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGVzdHMvUnVuVGVzdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4d5gu2bgyb
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0xheW91dC5jc2h0bWw=
+>>>>>>> Testing
 build_metadata.AdditionalFiles.CssScope = 

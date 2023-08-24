@@ -1,7 +1,15 @@
 ﻿@page "/"
+@using Blazored.Video
+@using Blazored.Video.Support
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Home</PageTitle>
 
-<MudText Typo="Typo.h3" GutterBottom="true">Hello, world!</MudText>
-<MudText Class="mb-8">Welcome to your new app, powered by MudBlazor!</MudText>
-<MudAlert Severity="Severity.Normal">You can find documentation and examples on our website here: <MudLink Href="https://mudblazor.com" Typo="Typo.body2" Color="Color.Inherit"><b>www.mudblazor.com</b></MudLink></MudAlert>
+<MudText Typo="Typo.h3" GutterBottom="true">Implicit association tester</MudText>
+<MudText Class="mb-8">Onderstaande video bevat de instructies voor het gebruik van de applicatie</MudText>
+
+<BlazoredVideo
+        class="w-100"
+        style="max-width:100%;"
+        controls="controls">
+    <source src="Data/Video/Demo.mp4" type="video/mp4" />
+</BlazoredVideo>

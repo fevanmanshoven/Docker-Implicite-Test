@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Text.Json;
-using ImpliciteTesterServer.Data;
-using ImpliciteTesterServer.Infrastructure;
+using DockerImpliciteTest.Data;
+using DockerImpliciteTest.Infrastructure;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Hosting.Server;
@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 using MudBlazor;
 using static MudBlazor.CategoryTypes;
 
-namespace ImpliciteTesterServer.Pages.Tests
+namespace DockerImpliciteTest.Pages.Tests
 {
     public partial class DetailsTests
     {
@@ -59,7 +59,7 @@ namespace ImpliciteTesterServer.Pages.Tests
 
         protected void getTests(int testId)
         {
-            Snackbar.Add("Fases loading...");
+            Snackbar.Add("Test loading...");
             test = context.Tests.Where(t => t.TestId == testId)
                 .Include(i => i.PosCategories)
                 .Include(i => i.PosImageUploads)
@@ -74,17 +74,16 @@ namespace ImpliciteTesterServer.Pages.Tests
 
             fases = test.Fases;
 
+            Snackbar.Add("Test loaded...");
         }
 
         protected void getCategories()
         {
-            Snackbar.Add("Category loading...");
             categories = context.Categories.ToList();
         }
 
         protected List<FaseTypeImage> getPosFaseImageUploads(int amount)
         {
-            Snackbar.Add("ImageUploads loading...");
             List<Category> posCategories = selectedPosCategories.ToList();
 
             List<FaseTypeImage> posFaceTypeImages = new();
@@ -110,7 +109,6 @@ namespace ImpliciteTesterServer.Pages.Tests
 
         protected List<FaseTypeImage> getNegFaseImageUploads(int amount)
         {
-            Snackbar.Add("ImageUploads loading...");
             List<Category> negCategories = selectedNegCategories.ToList();
 
             List<FaseTypeImage> negFaceTypeImages = new();

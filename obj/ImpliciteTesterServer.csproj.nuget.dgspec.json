@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\ImpliciteTesterServer.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\ImpliciteTesterServer.csproj",
         "packagesPath": "C:\\Users\\fevan\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\obj\\",
+=======
+    "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/ImpliciteTesterServer.csproj": {}
+  },
+  "projects": {
+    "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/ImpliciteTesterServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/ImpliciteTesterServer.csproj",
+        "projectName": "ImpliciteTesterServer",
+        "projectPath": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/ImpliciteTesterServer.csproj",
+        "packagesPath": "/Users/fevanmanshoven/.nuget/packages/",
+        "outputPath": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/obj/",
+>>>>>>> Testing
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fevan\\AppData\\Roaming\\NuGet\\NuGet.Config",

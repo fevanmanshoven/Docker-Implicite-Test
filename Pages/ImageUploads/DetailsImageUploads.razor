@@ -1,5 +1,5 @@
 ﻿@page "/details-upload/{ImageUploadId}"
-@using ImpliciteTesterServer.Data;
+@using DockerImpliciteTest.Data;
 
 
 <PageTitle>Images uploads</PageTitle>
@@ -29,19 +29,6 @@ else
                     <MudSelectItem T="Category" Value="@(category)" />
                 }
             </MudSelect>
-
-            <MudGrid Class="mt-6 px-4">
-                <MudItem xs="6">
-                    <MudText Typo="Typo.subtitle2">SelectedValues: HashSet&lt;Category&gt;</MudText>
-                    <MudText Typo="Typo.subtitle2">{</MudText>
-                    @foreach (Category cat in selectedCategories)
-                    {
-                        @*<MudText Typo="Typo.body2" Class="pl-4">@(string.Join("", selectedCategorieOptions))</MudText>*@
-                        <MudText Typo="Typo.body2" Class="pl-4">@cat.CategoryId - @cat.Name</MudText>
-                    }
-                    <MudText Typo="Typo.subtitle2">}</MudText>
-                </MudItem>
-            </MudGrid>
             <MudTextField @bind-Value="newImageNames"
                           For="@(() => newImageNames)"
                           Immediate="true"

@@ -2,8 +2,8 @@
 using System.IO;
 using System.Text.Json;
 using System.Xml.Linq;
-using ImpliciteTesterServer.Data;
-using ImpliciteTesterServer.Infrastructure;
+using DockerImpliciteTest.Data;
+using DockerImpliciteTest.Infrastructure;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Hosting.Server;
@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 using MudBlazor;
 using static System.Net.WebRequestMethods;
 
-namespace ImpliciteTesterServer.Pages.Categories
+namespace DockerImpliciteTest.Pages.Categories
 {
     public partial class Categories
     {
@@ -35,7 +35,6 @@ namespace ImpliciteTesterServer.Pages.Categories
             try
             {
                 getCategories();
-                Snackbar.Add("Category loaded");
             }
             catch (Exception ex)
             {
@@ -49,6 +48,8 @@ namespace ImpliciteTesterServer.Pages.Categories
         {
             Snackbar.Add("Category loading...");
             categories = context.Categories.ToList();
+            Snackbar.Add("Category loaded...");
+
         }
 
         //protected async Task getCategories()
@@ -72,7 +73,7 @@ namespace ImpliciteTesterServer.Pages.Categories
                     //await SaveFile();
                     categories.Add(newCategory);
                     Snackbar.Add("Category added");
-                    Snackbar.Add(categories.ToString());
+                    // Snackbar.Add(categories.ToString());
                     await SaveAsync();
                     newCategory = new();
                 }

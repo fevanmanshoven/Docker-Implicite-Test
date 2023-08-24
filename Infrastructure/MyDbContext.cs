@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Emit;
 using System.Reflection.Metadata;
-using ImpliciteTesterServer.Data;
+using DockerImpliciteTest.Data;
 using Microsoft.EntityFrameworkCore;
 using Squads.Infrastructure.EntityTypeConfigurations;
 
-namespace ImpliciteTesterServer.Infrastructure
+namespace DockerImpliciteTest.Infrastructure
 {
     public class MyDbContext : DbContext
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Text.Json;
-using ImpliciteTesterServer.Data;
-using ImpliciteTesterServer.Infrastructure;
+using DockerImpliciteTest.Data;
+using DockerImpliciteTest.Infrastructure;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Hosting.Server;
@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MudBlazor;
 
-namespace ImpliciteTesterServer.Pages.Tests
+namespace DockerImpliciteTest.Pages.Tests
 {
     public partial class CreateTests
     {
@@ -74,13 +74,11 @@ namespace ImpliciteTesterServer.Pages.Tests
 
         protected void getCategories()
         {
-            Snackbar.Add("Category loading...");
             categories = context.Categories.ToList();
         }
 
         protected void getImageUploads()
         {
-            Snackbar.Add("ImageUploads loading...");
             imageUploads = context.ImageUploads.ToList();
         }
 
@@ -88,6 +86,7 @@ namespace ImpliciteTesterServer.Pages.Tests
         {
             Snackbar.Add("Tests loading...");
             tests = context.Tests.Include(t => t.Fases).Include(t => t.Results).ToList();
+            Snackbar.Add("Tests loaded...");
         }
 
         private async Task SubmitAsync()

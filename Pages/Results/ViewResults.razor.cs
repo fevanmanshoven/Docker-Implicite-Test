@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Text.Json;
-using ImpliciteTesterServer.Data;
-using ImpliciteTesterServer.Infrastructure;
+using DockerImpliciteTest.Data;
+using DockerImpliciteTest.Infrastructure;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Hosting.Server;
@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MudBlazor;
 
-namespace ImpliciteTesterServer.Pages.Results
+namespace DockerImpliciteTest.Pages.Results
 {
     public partial class ViewResults
     {
@@ -53,6 +53,7 @@ namespace ImpliciteTesterServer.Pages.Results
         {
             Snackbar.Add("Results loading...");
             results = context.Results.Include(r => r.Test).ToList();
+            Snackbar.Add("Results loaded...");
         }
 
         private async Task Remove(Result result)

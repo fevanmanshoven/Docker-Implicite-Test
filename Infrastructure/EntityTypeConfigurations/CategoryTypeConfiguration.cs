@@ -1,4 +1,4 @@
-﻿using ImpliciteTesterServer.Data;
+﻿using DockerImpliciteTest.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
