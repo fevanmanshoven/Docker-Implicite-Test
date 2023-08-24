@@ -16,7 +16,7 @@ RUN dotnet build "DockerImpliciteTest.csproj" -c Release -o /app/build
 
 # copy and publish app and libraries
 FROM build AS publish
-RUN dotnet publish -a $TARGETARCH --self-contained false --no-restore "DockerImpliciteTest.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish -a $TARGETARCH "DockerImpliciteTest.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 # To enable globalization:
 # https://github.com/dotnet/dotnet-docker/blob/main/samples/enable-globalization.md
