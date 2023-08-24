@@ -12,6 +12,9 @@ env:
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        architecture: [amd64, arm64]
     permissions:
       contents: read
       packages: write
