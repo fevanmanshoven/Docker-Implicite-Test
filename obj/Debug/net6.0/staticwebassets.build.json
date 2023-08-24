@@ -1,38 +1,22 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "Hash": "NhwTigmJ3FeIBfbGhsPUduCq+hkMBJntJSTY59uZKQc=",
-  "Source": "ImpliciteTesterServer",
-  "BasePath": "_content/ImpliciteTesterServer",
-=======
-  "Hash": "JY7P0rVGUTN+NsoIJTj7/sn1/VRDJfulmq6O6egzgjE=",
+  "Hash": "hSix6sFTQ/TQ3njKQy8V52HuoJ/bKd028iS94F7fVd4=",
   "Source": "DockerImpliciteTest",
   "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-<<<<<<< HEAD
-      "Name": "ImpliciteTesterServer\\wwwroot",
-      "Source": "ImpliciteTesterServer",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
       "Name": "DockerImpliciteTest/wwwroot",
       "Source": "DockerImpliciteTest",
       "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
       "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\.nuget\\packages\\mudblazor\\6.2.5\\staticwebassets\\MudBlazor.min.css",
-=======
       "Identity": "/Users/fevanmanshoven/.nuget/packages/blazored.video/1.0.1/staticwebassets/blazoredVideo.js",
       "SourceId": "Blazored.Video",
       "SourceType": "Package",
@@ -53,10 +37,9 @@
     },
     {
       "Identity": "/Users/fevanmanshoven/.nuget/packages/mudblazor/6.2.5/staticwebassets/MudBlazor.min.css",
->>>>>>> Testing
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\fevan\\.nuget\\packages\\mudblazor\\6.2.5\\staticwebassets\\",
+      "ContentRoot": "/Users/fevanmanshoven/.nuget/packages/mudblazor/6.2.5/staticwebassets/",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.css",
       "AssetKind": "All",
@@ -69,13 +52,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\fevan\\.nuget\\packages\\mudblazor\\6.2.5\\staticwebassets\\MudBlazor.min.css"
+      "OriginalItemSpec": "/Users/fevanmanshoven/.nuget/packages/mudblazor/6.2.5/staticwebassets/MudBlazor.min.css"
     },
     {
-      "Identity": "C:\\Users\\fevan\\.nuget\\packages\\mudblazor\\6.2.5\\staticwebassets\\MudBlazor.min.js",
+      "Identity": "/Users/fevanmanshoven/.nuget/packages/mudblazor/6.2.5/staticwebassets/MudBlazor.min.js",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\fevan\\.nuget\\packages\\mudblazor\\6.2.5\\staticwebassets\\",
+      "ContentRoot": "/Users/fevanmanshoven/.nuget/packages/mudblazor/6.2.5/staticwebassets/",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.js",
       "AssetKind": "All",
@@ -88,24 +71,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\fevan\\.nuget\\packages\\mudblazor\\6.2.5\\staticwebassets\\MudBlazor.min.js"
+      "OriginalItemSpec": "/Users/fevanmanshoven/.nuget/packages/mudblazor/6.2.5/staticwebassets/MudBlazor.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ImpliciteTesterServer.styles.css",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-      "RelativePath": "ImpliciteTesterServer.styles.css",
-=======
       "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/obj/Debug/net6.0/scopedcss/bundle/DockerImpliciteTest.styles.css",
       "SourceId": "DockerImpliciteTest",
       "SourceType": "Computed",
       "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/obj/Debug/net6.0/scopedcss/bundle/",
       "BasePath": "_content/DockerImpliciteTest",
       "RelativePath": "DockerImpliciteTest.styles.css",
->>>>>>> Testing
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
@@ -116,17 +90,6 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ImpliciteTesterServer.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ImpliciteTesterServer.bundle.scp.css",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-      "RelativePath": "ImpliciteTesterServer.bundle.scp.css",
-=======
       "OriginalItemSpec": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/obj/Debug/net6.0/scopedcss/bundle/DockerImpliciteTest.styles.css"
     },
     {
@@ -136,7 +99,6 @@
       "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/obj/Debug/net6.0/scopedcss/projectbundle/",
       "BasePath": "_content/DockerImpliciteTest",
       "RelativePath": "DockerImpliciteTest.bundle.scp.css",
->>>>>>> Testing
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
@@ -147,16 +109,6 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ImpliciteTesterServer.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\.DS_Store",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
       "OriginalItemSpec": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/obj/Debug/net6.0/scopedcss/projectbundle/DockerImpliciteTest.bundle.scp.css"
     },
     {
@@ -165,7 +117,6 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
       "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
       "RelativePath": ".DS_Store",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -177,22 +128,14 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\.DS_Store"
+      "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\.DS_Store",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
       "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/.DS_Store",
       "SourceId": "DockerImpliciteTest",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
       "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
       "RelativePath": "Data/.DS_Store",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -204,23 +147,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Data\\.DS_Store"
+      "OriginalItemSpec": "wwwroot/Data/.DS_Store"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\FaceReader\\Results_01_0.txt",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/FaceReader/Results_01_0.txt",
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/FaceReader/.DS_Store",
       "SourceId": "DockerImpliciteTest",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
       "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
-      "RelativePath": "Data/FaceReader/Results_01_0.txt",
+      "RelativePath": "Data/FaceReader/.DS_Store",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -231,49 +166,14 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Data\\FaceReader\\Results_01_0.txt"
+      "OriginalItemSpec": "wwwroot/Data/FaceReader/.DS_Store"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\FaceReader\\Test met Shtinky_0.txt",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/FaceReader/Test met Shtinky_0.txt",
-      "SourceId": "DockerImpliciteTest",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
-      "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
-      "RelativePath": "Data/FaceReader/Test met Shtinky_0.txt",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Data\\FaceReader\\Test met Shtinky_0.txt"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\.DS_Store",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
       "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Images/.DS_Store",
       "SourceId": "DockerImpliciteTest",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
       "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
       "RelativePath": "Data/Images/.DS_Store",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -285,286 +185,9 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Data\\Images\\.DS_Store"
+      "OriginalItemSpec": "wwwroot/Data/Images/.DS_Store"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Mannen_0.jpg",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Images/Mannen_0.jpg",
-      "SourceId": "DockerImpliciteTest",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
-      "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
-      "RelativePath": "Data/Images/Mannen_0.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Data\\Images\\Mannen_0.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Mannen_1.jpg",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Images/Mannen_1.jpg",
-      "SourceId": "DockerImpliciteTest",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
-      "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
-      "RelativePath": "Data/Images/Mannen_1.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Data\\Images\\Mannen_1.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Mannen_2.jpg",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Images/Mannen_2.jpg",
-      "SourceId": "DockerImpliciteTest",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
-      "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
-      "RelativePath": "Data/Images/Mannen_2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Data\\Images\\Mannen_2.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Vrouwen_0.jpg",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Images/Vrouwen_0.jpg",
-      "SourceId": "DockerImpliciteTest",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
-      "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
-      "RelativePath": "Data/Images/Vrouwen_0.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Data\\Images\\Vrouwen_0.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Vrouwen_1.jpg",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Images/Vrouwen_1.jpg",
-      "SourceId": "DockerImpliciteTest",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
-      "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
-      "RelativePath": "Data/Images/Vrouwen_1.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Data\\Images\\Vrouwen_1.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Vrouwen_2.jpg",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Images/Vrouwen_2.jpg",
-      "SourceId": "DockerImpliciteTest",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
-      "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
-      "RelativePath": "Data/Images/Vrouwen_2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Data\\Images\\Vrouwen_2.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Vrouwen_3.jpg",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Images/Vrouwen_3.jpg",
-      "SourceId": "DockerImpliciteTest",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
-      "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
-      "RelativePath": "Data/Images/Vrouwen_3.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Data\\Images\\Vrouwen_3.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Vrouwen_4.jpg",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Images/Vrouwen_4.jpg",
-      "SourceId": "DockerImpliciteTest",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
-      "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
-      "RelativePath": "Data/Images/Vrouwen_4.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Data\\Images\\Vrouwen_4.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Vrouwen_5.jpg",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Images/Vrouwen_5.jpg",
-      "SourceId": "DockerImpliciteTest",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
-      "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
-      "RelativePath": "Data/Images/Vrouwen_5.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Data\\Images\\Vrouwen_5.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\Data\\Images\\Vrouwen_test_imageupload_0.jpg",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Images/Vrouwen_test_imageupload_0.jpg",
-      "SourceId": "DockerImpliciteTest",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
-      "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
-      "RelativePath": "Data/Images/Vrouwen_test_imageupload_0.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Data\\Images\\Vrouwen_test_imageupload_0.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\favicon.ico",
-      "SourceId": "ImpliciteTesterServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\wwwroot\\",
-      "BasePath": "_content/ImpliciteTesterServer",
-=======
       "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/.DS_Store",
       "SourceId": "DockerImpliciteTest",
       "SourceType": "Discovered",
@@ -584,12 +207,12 @@
       "OriginalItemSpec": "wwwroot/Data/Test-data/.DS_Store"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Export-Samples/.DS_Store",
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Export-samples/.DS_Store",
       "SourceId": "DockerImpliciteTest",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
       "BasePath": "_content/DockerImpliciteTest",
-      "RelativePath": "Data/Test-data/Export-Samples/.DS_Store",
+      "RelativePath": "Data/Test-data/Export-samples/.DS_Store",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -600,15 +223,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/Test-data/Export-Samples/.DS_Store"
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Export-samples/.DS_Store"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Export-Samples/ExportDataNoldus.txt",
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Export-samples/ExportDataNoldus.txt",
       "SourceId": "DockerImpliciteTest",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
       "BasePath": "_content/DockerImpliciteTest",
-      "RelativePath": "Data/Test-data/Export-Samples/ExportDataNoldus.txt",
+      "RelativePath": "Data/Test-data/Export-samples/ExportDataNoldus.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -619,7 +242,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/Test-data/Export-Samples/ExportDataNoldus.txt"
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Export-samples/ExportDataNoldus.txt"
     },
     {
       "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Image-samples/.DS_Store",
@@ -1572,12 +1195,12 @@
       "OriginalItemSpec": "wwwroot/Data/Test-data/Image-samples/Vrouw/pexels-kat-smith-568025.jpg"
     },
     {
-      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Video/Demo.webm",
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Jorrit-samples/Jonge man1.jpg",
       "SourceId": "DockerImpliciteTest",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
       "BasePath": "_content/DockerImpliciteTest",
-      "RelativePath": "Data/Video/Demo.webm",
+      "RelativePath": "Data/Test-data/Jorrit-samples/Jonge man1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1588,7 +1211,330 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Data/Video/Demo.webm"
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Jorrit-samples/Jonge man1.jpg"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Jorrit-samples/Jonge man2.jpg",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Test-data/Jorrit-samples/Jonge man2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Jorrit-samples/Jonge man2.jpg"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Jorrit-samples/Jonge man3.jpg",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Test-data/Jorrit-samples/Jonge man3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Jorrit-samples/Jonge man3.jpg"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Jorrit-samples/Jonge man4.jpg",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Test-data/Jorrit-samples/Jonge man4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Jorrit-samples/Jonge man4.jpg"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Jorrit-samples/Jonge vrouw1.jpg",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Test-data/Jorrit-samples/Jonge vrouw1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Jorrit-samples/Jonge vrouw1.jpg"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Jorrit-samples/Jonge vrouw2.jpg",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Test-data/Jorrit-samples/Jonge vrouw2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Jorrit-samples/Jonge vrouw2.jpg"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Jorrit-samples/Jonge vrouw3.jpg",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Test-data/Jorrit-samples/Jonge vrouw3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Jorrit-samples/Jonge vrouw3.jpg"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Jorrit-samples/Jonge vrouw4.jpg",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Test-data/Jorrit-samples/Jonge vrouw4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Jorrit-samples/Jonge vrouw4.jpg"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Jorrit-samples/Oude man1.jpg",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Test-data/Jorrit-samples/Oude man1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Jorrit-samples/Oude man1.jpg"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Jorrit-samples/Oude man2.jpg",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Test-data/Jorrit-samples/Oude man2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Jorrit-samples/Oude man2.jpg"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Jorrit-samples/Oude man3.jpg",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Test-data/Jorrit-samples/Oude man3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Jorrit-samples/Oude man3.jpg"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Jorrit-samples/Oude man4.jpg",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Test-data/Jorrit-samples/Oude man4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Jorrit-samples/Oude man4.jpg"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Jorrit-samples/Oude vrouw1.jpg",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Test-data/Jorrit-samples/Oude vrouw1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Jorrit-samples/Oude vrouw1.jpg"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Jorrit-samples/Oude vrouw2.jpg",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Test-data/Jorrit-samples/Oude vrouw2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Jorrit-samples/Oude vrouw2.jpg"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Jorrit-samples/Oude vrouw3.jpg",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Test-data/Jorrit-samples/Oude vrouw3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Jorrit-samples/Oude vrouw3.jpg"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Test-data/Jorrit-samples/Oude vrouw4.jpg",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Test-data/Jorrit-samples/Oude vrouw4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Test-data/Jorrit-samples/Oude vrouw4.jpg"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Video/.DS_Store",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Video/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Video/.DS_Store"
+    },
+    {
+      "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/Data/Video/Demo.mp4",
+      "SourceId": "DockerImpliciteTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
+      "BasePath": "_content/DockerImpliciteTest",
+      "RelativePath": "Data/Video/Demo.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Video/Demo.mp4"
     },
     {
       "Identity": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/favicon.ico",
@@ -1596,7 +1542,6 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/wwwroot/",
       "BasePath": "_content/DockerImpliciteTest",
->>>>>>> Testing
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1608,7 +1553,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
+      "OriginalItemSpec": "wwwroot/favicon.ico"
     }
   ]
 }

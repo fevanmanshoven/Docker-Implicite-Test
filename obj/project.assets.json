@@ -1773,34 +1773,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fevan\\.nuget\\packages\\": {}
+    "/Users/fevanmanshoven/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\ImpliciteTesterServer.csproj",
-      "projectName": "ImpliciteTesterServer",
-      "projectPath": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\ImpliciteTesterServer.csproj",
-      "packagesPath": "C:\\Users\\fevan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fevan\\Source\\Repos\\fevanmanshoven\\Docker-Implicite-Test\\obj\\",
-=======
       "projectUniqueName": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/DockerImpliciteTest.csproj",
       "projectName": "DockerImpliciteTest",
       "projectPath": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/DockerImpliciteTest.csproj",
       "packagesPath": "/Users/fevanmanshoven/.nuget/packages/",
       "outputPath": "/Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/obj/",
->>>>>>> Testing
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\fevan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/fevanmanshoven/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1886,12 +1876,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100-preview.7.23376.3/RuntimeIdentifierGraph.json"
->>>>>>> Testing
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file /Users/fevanmanshoven/Desktop/BP/ImpliciteTesterServer/Docker-Implicite-Test/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
