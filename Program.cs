@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Hosting.StaticWebAssets;
 using DockerImpliciteTest.Data;
 using MudBlazor.Services;
-using ImpliciteTesterServer.Infrastructure;
+using DockerImpliciteTest.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +15,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddMudServices();
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.Environment.WebRootPath) });
-builder.Services.AddDbContext<MyDbContext>(x => x.UseSqlite("Data Source=ImpliciteTester.db"));
+builder.Services.AddDbContext<MyDbContext>(x => x.UseSqlite("Data Source=DockerImpliciteTest.db"));
 var app = builder.Build();
 
 
