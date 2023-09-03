@@ -15,6 +15,10 @@ namespace DockerImpliciteTest.Data
 
         public List<Category> Categories { get; set; }
 
+        public List<Test> PostUploadTests { get; set; }
+
+        public List<Test> NegUploadTests { get; set; }
+
         public ImageUpload()
 		{
 		}

@@ -2,14 +2,32 @@
 @using Blazored.Video
 @using Blazored.Video.Support
 
+
 <PageTitle>Home</PageTitle>
 
 <MudText Typo="Typo.h3" GutterBottom="true">Implicit association tester</MudText>
-<MudText Class="mb-8">Onderstaande video bevat de instructies voor het gebruik van de applicatie</MudText>
+<MudText>Onderstaande video bevat de instructies voor het gebruik van de applicatie en een evaluatieformulier</MudText>
+<MudSwitch Class="mb-8" @bind-Checked="@offlineVideo" Label="offline video (lagere kwaliteit)" Color="Color.Info"></MudSwitch>
+@code{
+    public bool offlineVideo { get; set; } = false;
+}
+@if(offlineVideo){
 
-<BlazoredVideo
+}else{
+<MudContainer style="width:1020px;height:750px">
+<iframe width="1020" height="630" src="https://www.youtube.com/embed/OfWnKRewy54" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</MudContainer>
+}
+<MudContainer style="width:1020px;height:2718px">
+<MudText Class="mt-2">Link naar online formulier: <MudLink Href="https://docs.google.com/forms/d/e/1FAIpQLSeGcrO_VmKvKDOocPIWNIVDWVwYN2uM1xjlQ3WgmuRnSO6CTQ/viewform?usp=sf_link" Target="_blank" Underline="Underline.Always">Klik hier</MudLink></MudText>
+<MudText Class="mt-1">Dit evaluatieformulier bevat ook alle installatieinstructies van de applicatie</MudText>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGcrO_VmKvKDOocPIWNIVDWVwYN2uM1xjlQ3WgmuRnSO6CTQ/viewform?embedded=true" width="1020" height="2718" frameborder="0" marginheight="0" marginwidth="0">Laden…</iframe>
+</MudContainer>
+
+@* <BlazoredVideo
         class="w-100"
         style="max-width:100%;"
         controls="controls">
-    <source src="Data/Video/Demo.mp4" type="video/mp4" />
-</BlazoredVideo>
+>
+</BlazoredVideo> *@

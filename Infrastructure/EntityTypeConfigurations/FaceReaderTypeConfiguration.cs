@@ -20,7 +20,6 @@ namespace Squads.Infrastructure.EntityTypeConfigurations
             builder.Property(x => x.FaceReaderId).IsRequired().ValueGeneratedOnAdd();
             builder.Property(x => x.Name).IsRequired();
             builder.Property(x => x.Source).IsRequired();
-            builder.HasMany(x => x.FaceReaderDatas);
             #endregion
 
             #region Define data

@@ -19,7 +19,6 @@ namespace Squads.Infrastructure.EntityTypeConfigurations
             builder.HasKey(x => x.CategoryId);
             builder.Property(x => x.CategoryId).IsRequired().ValueGeneratedOnAdd();
             builder.Property(x => x.Name).IsRequired();
-            builder.HasMany(x => x.ImageUploads).WithMany(x => x.Categories);
             #endregion
 
             #region Define data

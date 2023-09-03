@@ -1,37 +1,10 @@
-﻿@page "/run-test/{TestId}"
+﻿@page "/create-result/{TestId}"
 @using DockerImpliciteTest.Data;
 
-@if (loading)
-{
-    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
-}
-else
-{
 
-    @if (!isStarted)
-    {
-        <MudGrid Class="d-flex justify-center">
-            <MudItem>
-                <MudNumericField HideSpinButtons="true" @bind-Value="@countdownSeconds" Label="Countdown" Variant="Variant.Text" Min="0" Max="10" />
-                <MudButton Class="align-center mt-5" @onclick="startAnimation" Variant="Variant.Filled" Color="Color.Primary">
-                    Start Test
-                </MudButton>
-            </MudItem>
-        </MudGrid>
-    }
 
-    @if (isCountdown)
-    {
-        <MudGrid Class="d-flex justify-center">
-            <MudItem>
-                <MudText Typo="Typo.h1" Style="font-size:60vh;">@countdownNumber</MudText>
-            </MudItem>
-        </MudGrid>
-    }
-
-    @if (isFinished)
-    {
-        <MudForm Model="@newResult" @ref="@form" @bind-IsValid="@success" @bind-Errors="@errors">
+<PageTitle>Create Result</PageTitle>
+<MudForm Model="@newResult" @ref="@form" @bind-IsValid="@success" @bind-Errors="@errors">
             <MudGrid Class="d-flex justify-center">
                 <MudItem>
                     <MudTextField @bind-Value="newResult.Name"
@@ -69,14 +42,3 @@ else
                 </MudItem>
             </MudGrid>
         </MudForm>
-
-    }
-    @if (isStarted)
-    {
-        <div class="d-flex justify-center">
-            <MudImage ObjectPosition="ObjectPosition.Center" Height="700" Src="@showingSrc" Elevation="25" Class="rounded-lg align-center " />
-        </div>
-
-    }
-
-}

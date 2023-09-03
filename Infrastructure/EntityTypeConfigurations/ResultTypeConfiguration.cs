@@ -20,7 +20,6 @@ namespace Squads.Infrastructure.EntityTypeConfigurations
             builder.HasKey(x => x.ResultId);
             builder.Property(x => x.ResultId).IsRequired().ValueGeneratedOnAdd();
             builder.Property(x => x.Name).IsRequired();
-            builder.HasOne(x => x.FaceReader);
             builder.Property(x => x.TimeLineResult)
             .HasConversion(
                 v => string.Join(',', v),

@@ -3,6 +3,11 @@
 
 <PageTitle>Results</PageTitle>
 <MudText Typo="Typo.h3" GutterBottom="true">Results</MudText>
+<MudFab HtmlTag="detail"
+                            Color="@Color.Success"
+                            Icon="@Icons.Material.Filled.AddCircleOutline"
+                            Size="@Size.Small"
+                            @onclick="() => NavigateToAddResult()"> add result </MudFab>
 @if (loading)
 {
     <MudProgressCircular Color="Color.Default" Indeterminate="true" />

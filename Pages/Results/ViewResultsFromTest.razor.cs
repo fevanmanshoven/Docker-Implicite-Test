@@ -19,8 +19,6 @@ namespace DockerImpliciteTest.Pages.Results
         [Inject] IWebHostEnvironment env { get; set; }
         [Inject] public NavigationManager nav { get; set; }
         [Parameter] public string TestId { get; set; }
-
-
         private List<Result> results = new();
         private MyDbContext context = new MyDbContext();
 
@@ -50,6 +48,11 @@ namespace DockerImpliciteTest.Pages.Results
         private void NavigateToDetailsTests(int testId)
         {
             nav.NavigateTo("details-result/" + testId);
+        }
+
+        private void NavigateToAddResult()
+        {
+             nav.NavigateTo("create-result/" + Int16.Parse(TestId));
         }
 
         protected void getResults(int testId)

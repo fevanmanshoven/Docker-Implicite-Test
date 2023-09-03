@@ -18,10 +18,10 @@ namespace Squads.Infrastructure.EntityTypeConfigurations
             builder.HasKey(x => x.TestId);
             builder.Property(x => x.TestId).IsRequired().ValueGeneratedOnAdd();
             builder.Property(x => x.Name).IsRequired();
-            builder.HasMany(x => x.PosCategories);
-            builder.HasMany(x => x.PosImageUploads);
-            builder.HasMany(x => x.NegCategories);
-            builder.HasMany(x => x.NegImageUploads);
+            builder.HasMany(x => x.PosCategories).WithMany(x => x.PostCategorieTests);
+            builder.HasMany(x => x.PosImageUploads).WithMany(x => x.PostUploadTests);
+            builder.HasMany(x => x.NegCategories).WithMany(x => x.NegCategorieTests);
+            builder.HasMany(x => x.NegImageUploads).WithMany(x => x.NegUploadTests);
             builder.HasMany(x => x.Fases);
             #endregion
 
