@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DockerImpliciteTest.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20230520085253_InitialCreate")]
+    [Migration("20230824175701_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -35,6 +35,36 @@ namespace DockerImpliciteTest.Migrations
                     b.ToTable("CategoryImageUpload");
                 });
 
+            modelBuilder.Entity("CategoryTest", b =>
+                {
+                    b.Property<int>("PosCategoriesCategoryId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("PostCategorieTestsTestId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("PosCategoriesCategoryId", "PostCategorieTestsTestId");
+
+                    b.HasIndex("PostCategorieTestsTestId");
+
+                    b.ToTable("CategoryTest");
+                });
+
+            modelBuilder.Entity("CategoryTest1", b =>
+                {
+                    b.Property<int>("NegCategorieTestsTestId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("NegCategoriesCategoryId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("NegCategorieTestsTestId", "NegCategoriesCategoryId");
+
+                    b.HasIndex("NegCategoriesCategoryId");
+
+                    b.ToTable("CategoryTest1");
+                });
+
             modelBuilder.Entity("DockerImpliciteTest.Data.Category", b =>
                 {
                     b.Property<int>("CategoryId")
@@ -45,17 +75,7 @@ namespace DockerImpliciteTest.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("TestId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("TestId1")
-                        .HasColumnType("INTEGER");
-
                     b.HasKey("CategoryId");
-
-                    b.HasIndex("TestId");
-
-                    b.HasIndex("TestId1");
 
                     b.ToTable("Categories");
 
@@ -255,17 +275,7 @@ namespace DockerImpliciteTest.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("TestId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("TestId1")
-                        .HasColumnType("INTEGER");
-
                     b.HasKey("ImageUploadId");
-
-                    b.HasIndex("TestId");
-
-                    b.HasIndex("TestId1");
 
                     b.ToTable("ImageUploads");
                 });
@@ -318,6 +328,36 @@ namespace DockerImpliciteTest.Migrations
                     b.ToTable("Tests");
                 });
 
+            modelBuilder.Entity("ImageUploadTest", b =>
+                {
+                    b.Property<int>("PosImageUploadsImageUploadId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("PostUploadTestsTestId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("PosImageUploadsImageUploadId", "PostUploadTestsTestId");
+
+                    b.HasIndex("PostUploadTestsTestId");
+
+                    b.ToTable("ImageUploadTest");
+                });
+
+            modelBuilder.Entity("ImageUploadTest1", b =>
+                {
+                    b.Property<int>("NegImageUploadsImageUploadId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("NegUploadTestsTestId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("NegImageUploadsImageUploadId", "NegUploadTestsTestId");
+
+                    b.HasIndex("NegUploadTestsTestId");
+
+                    b.ToTable("ImageUploadTest1");
+                });
+
             modelBuilder.Entity("CategoryImageUpload", b =>
                 {
                     b.HasOne("DockerImpliciteTest.Data.Category", null)
@@ -333,15 +373,34 @@ namespace DockerImpliciteTest.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("DockerImpliciteTest.Data.Category", b =>
+            modelBuilder.Entity("CategoryTest", b =>
                 {
-                    b.HasOne("DockerImpliciteTest.Data.Test", null)
-                        .WithMany("NegCategories")
-                        .HasForeignKey("TestId");
+                    b.HasOne("DockerImpliciteTest.Data.Category", null)
+                        .WithMany()
+                        .HasForeignKey("PosCategoriesCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("DockerImpliciteTest.Data.Test", null)
-                        .WithMany("PosCategories")
-                        .HasForeignKey("TestId1");
+                        .WithMany()
+                        .HasForeignKey("PostCategorieTestsTestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("CategoryTest1", b =>
+                {
+                    b.HasOne("DockerImpliciteTest.Data.Test", null)
+                        .WithMany()
+                        .HasForeignKey("NegCategorieTestsTestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DockerImpliciteTest.Data.Category", null)
+                        .WithMany()
+                        .HasForeignKey("NegCategoriesCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("DockerImpliciteTest.Data.FaceReaderData", b =>
@@ -388,17 +447,6 @@ namespace DockerImpliciteTest.Migrations
                     b.Navigation("ImageUpload");
                 });
 
-            modelBuilder.Entity("DockerImpliciteTest.Data.ImageUpload", b =>
-                {
-                    b.HasOne("DockerImpliciteTest.Data.Test", null)
-                        .WithMany("NegImageUploads")
-                        .HasForeignKey("TestId");
-
-                    b.HasOne("DockerImpliciteTest.Data.Test", null)
-                        .WithMany("PosImageUploads")
-                        .HasForeignKey("TestId1");
-                });
-
             modelBuilder.Entity("DockerImpliciteTest.Data.Result", b =>
                 {
                     b.HasOne("DockerImpliciteTest.Data.FaceReader", "FaceReader")
@@ -416,6 +464,36 @@ namespace DockerImpliciteTest.Migrations
                     b.Navigation("FaceReader");
 
                     b.Navigation("Test");
+                });
+
+            modelBuilder.Entity("ImageUploadTest", b =>
+                {
+                    b.HasOne("DockerImpliciteTest.Data.ImageUpload", null)
+                        .WithMany()
+                        .HasForeignKey("PosImageUploadsImageUploadId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DockerImpliciteTest.Data.Test", null)
+                        .WithMany()
+                        .HasForeignKey("PostUploadTestsTestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ImageUploadTest1", b =>
+                {
+                    b.HasOne("DockerImpliciteTest.Data.ImageUpload", null)
+                        .WithMany()
+                        .HasForeignKey("NegImageUploadsImageUploadId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DockerImpliciteTest.Data.Test", null)
+                        .WithMany()
+                        .HasForeignKey("NegUploadTestsTestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("DockerImpliciteTest.Data.FaceReader", b =>
@@ -436,14 +514,6 @@ namespace DockerImpliciteTest.Migrations
             modelBuilder.Entity("DockerImpliciteTest.Data.Test", b =>
                 {
                     b.Navigation("Fases");
-
-                    b.Navigation("NegCategories");
-
-                    b.Navigation("NegImageUploads");
-
-                    b.Navigation("PosCategories");
-
-                    b.Navigation("PosImageUploads");
 
                     b.Navigation("Results");
                 });

@@ -284,6 +284,7 @@ namespace DockerImpliciteTest.Pages.Tests
                             break;
                         case "Neutral":
                             var neutral = row[column];
+                            Console.WriteLine(neutral);
                             totalNeutral.Add(Convert.ToDouble(neutral));
                             break;
                         case "Happy":
